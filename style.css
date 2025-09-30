@@ -4,3 +4,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.right {
+    flex: 1.5
+}
+
+.left {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    /* keep it vertically centered */
+    left: 0;
+    /* start at the very left edge */
+    width: 100%;
+    /* span full width */
+    transform: translateY(-50%);
+    /* only vertical centering */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+    /* vertical padding only */
+    text-align: center;
+    /* centers the image horizontally */
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
