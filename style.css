@@ -283,3 +283,12 @@ input:invalid {
 input:valid {
     border-color: green;
 }
+
+.form-row input:focus {
+    outline: none;
+    /* remove default browser outline */
+    border-color: #556b2f;
+    /* highlight border */
+    box-shadow: 0 0 4px #556b2f;
+    /* subtle glow effect */
+}
